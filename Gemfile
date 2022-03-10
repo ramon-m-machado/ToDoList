@@ -6,6 +6,8 @@ ruby "3.0.0"
 # Eu adicionei
 gem "pg"
 
+gem 'devise', github: 'heartcombo/devise', branch: 'main'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 
