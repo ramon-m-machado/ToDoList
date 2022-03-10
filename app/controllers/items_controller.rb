@@ -58,6 +58,15 @@ class ItemsController < ApplicationController
     end
   end
 
+  def atl_one_item?(items)
+    items.each do |item|
+      if item.id.preset?
+        return true
+      end
+    end
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_item
