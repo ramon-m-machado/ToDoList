@@ -1,5 +1,6 @@
 class ListsController < ApplicationController
   before_action :set_list, only: %i[ show edit update destroy ]
+  # before_action :autenticate_user!, except: [:index]
 
   # GET /lists or /lists.json
   def index
@@ -9,6 +10,12 @@ class ListsController < ApplicationController
 
   # GET /lists/1 or /lists/1.json
   def show
+    @id_lista = params[:id]
+    @items = Item.all.where(list_id: @id_lista)
+    @item = Item.new
+    if @list.user_id != current_user.id
+      redirect_to root_path , notice: "This list does not belong to you!"
+    end
   end
 
   # GET /lists/new
