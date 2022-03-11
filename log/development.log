@@ -9793,3 +9793,313 @@ ActionController::RoutingError (No route matches [GET] "/users/js/popper.js"):
   
 ActionController::RoutingError (No route matches [GET] "/users/js/main.js"):
   
+Started GET "/" for ::1 at 2022-03-11 02:16:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 15ms (ActiveRecord: 0.0ms | Allocations: 6036)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-11 02:16:36 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 841)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3059)
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 728)
+  Rendered home/_footer.html.erb (Duration: 0.8ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 123.5ms | Allocations: 46891)
+Completed 200 OK in 153ms (Views: 130.5ms | ActiveRecord: 14.3ms | Allocations: 56236)
+
+
+Started GET "/users/js/jquery.min.js" for ::1 at 2022-03-11 02:16:36 -0300
+Started GET "/users/js/popper.js" for ::1 at 2022-03-11 02:16:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/jquery.min.js"):
+  
+Started GET "/users/js/bootstrap.min.js" for ::1 at 2022-03-11 02:16:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/popper.js"):
+  
+Started GET "/users/js/main.js" for ::1 at 2022-03-11 02:16:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/main.js"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-03-11 02:16:41 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 124)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 604)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 201)
+  Rendered home/_footer.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2959)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3659)
+
+
+Started GET "/users/js/jquery.min.js" for ::1 at 2022-03-11 02:16:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/jquery.min.js"):
+  
+Started GET "/users/js/popper.js" for ::1 at 2022-03-11 02:16:41 -0300
+Started GET "/users/js/bootstrap.min.js" for ::1 at 2022-03-11 02:16:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/popper.js"):
+  
+Started GET "/users/js/main.js" for ::1 at 2022-03-11 02:16:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/main.js"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-03-11 02:16:53 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 124)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 604)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 201)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2959)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3658)
+
+
+Started GET "/users/js/jquery.min.js" for ::1 at 2022-03-11 02:16:53 -0300
+Started GET "/users/js/bootstrap.min.js" for ::1 at 2022-03-11 02:16:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/jquery.min.js"):
+  
+Started GET "/users/js/popper.js" for ::1 at 2022-03-11 02:16:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/bootstrap.min.js"):
+  
+Started GET "/users/js/main.js" for ::1 at 2022-03-11 02:16:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/popper.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/main.js"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-03-11 02:16:54 -0300
+Started GET "/users/js/jquery.min.js" for ::1 at 2022-03-11 02:16:54 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 634)
+Started GET "/users/js/popper.js" for ::1 at 2022-03-11 02:16:54 -0300
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 223)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 3765)
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/jquery.min.js"):
+  
+Completed 200 OK in 29ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 4900)
+
+
+Started GET "/users/js/bootstrap.min.js" for ::1 at 2022-03-11 02:16:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/popper.js"):
+  
+Started GET "/users/js/main.js" for ::1 at 2022-03-11 02:16:54 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/main.js"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-03-11 02:17:08 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 124)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 604)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 201)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2959)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3642)
+
+
+Started GET "/users/js/jquery.min.js" for ::1 at 2022-03-11 02:17:08 -0300
+Started GET "/users/js/popper.js" for ::1 at 2022-03-11 02:17:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/jquery.min.js"):
+  
+Started GET "/users/js/bootstrap.min.js" for ::1 at 2022-03-11 02:17:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/popper.js"):
+  
+Started GET "/users/js/main.js" for ::1 at 2022-03-11 02:17:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/main.js"):
+  
+Started POST "/users/sign_in" for ::1 at 2022-03-11 02:17:35 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@a.a", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 239ms (ActiveRecord: 4.3ms | Allocations: 4541)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@a.a", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 607)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 157)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2906)
+Completed 200 OK in 221ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 3549)
+
+
+Started GET "/users/js/jquery.min.js" for ::1 at 2022-03-11 02:17:35 -0300
+Started GET "/users/js/popper.js" for ::1 at 2022-03-11 02:17:35 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/jquery.min.js"):
+  
+Started GET "/users/js/bootstrap.min.js" for ::1 at 2022-03-11 02:17:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/popper.js"):
+  
+Started GET "/users/js/main.js" for ::1 at 2022-03-11 02:17:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/main.js"):
+  
+Started POST "/users/sign_in" for ::1 at 2022-03-11 02:17:42 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@a.a", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 441)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@a.a", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 600)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 165)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2907)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 3461)
+
+
+Started GET "/users/js/jquery.min.js" for ::1 at 2022-03-11 02:17:42 -0300
+Started GET "/users/js/popper.js" for ::1 at 2022-03-11 02:17:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/jquery.min.js"):
+  
+Started GET "/users/js/main.js" for ::1 at 2022-03-11 02:17:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/popper.js"):
+  
+Started GET "/users/js/bootstrap.min.js" for ::1 at 2022-03-11 02:17:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/main.js"):
+  
+Started POST "/users/sign_in" for ::1 at 2022-03-11 02:17:47 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"a@a.a", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "a@a.a"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (5.4ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_created_at", "2022-03-11 05:17:47.637144"], ["updated_at", "2022-03-11 05:17:47.638961"], ["id", 2]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 288ms (ActiveRecord: 9.1ms | Allocations: 7189)
+
+
+Started GET "/" for ::1 at 2022-03-11 02:17:47 -0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 123)
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 460)
+  Rendered layouts/_alerts.html.erb (Duration: 0.5ms | Allocations: 216)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 3185)
+Completed 200 OK in 13ms (Views: 8.4ms | ActiveRecord: 0.4ms | Allocations: 5277)
+
+
+Started GET "/users/edit" for ::1 at 2022-03-11 02:18:05 -0300
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.8ms | Allocations: 238)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 7.7ms | Allocations: 2869)
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 411)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 5504)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 7753)
+
+
+Started GET "/lists" for ::1 at 2022-03-11 02:18:07 -0300
+Processing by ListsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering lists/index.html.erb within layouts/application
+  [1m[36mList Load (0.9ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/lists/index.html.erb:10
+  Rendered lists/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1034)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 413)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3683)
+Completed 200 OK in 23ms (Views: 8.8ms | ActiveRecord: 3.3ms | Allocations: 9011)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2022-03-11 02:18:08 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_created_at", nil], ["updated_at", "2022-03-11 05:18:08.252497"], ["id", 2]]
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 4.4ms | Allocations: 4495)
+
+
+Started GET "/" for ::1 at 2022-03-11 02:18:08 -0300
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 292)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-03-11 02:18:08 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 124)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 609)
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 201)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2951)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 3646)
+
+
+Started GET "/users/js/jquery.min.js" for ::1 at 2022-03-11 02:18:08 -0300
+Started GET "/users/js/popper.js" for ::1 at 2022-03-11 02:18:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/jquery.min.js"):
+  
+Started GET "/users/js/bootstrap.min.js" for ::1 at 2022-03-11 02:18:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/popper.js"):
+  
+Started GET "/users/js/main.js" for ::1 at 2022-03-11 02:18:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/bootstrap.min.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/users/js/main.js"):
+  
