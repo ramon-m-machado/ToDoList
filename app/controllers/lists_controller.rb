@@ -4,14 +4,15 @@ class ListsController < ApplicationController
 
   # GET /lists or /lists.json
   def index
-    @lists = List.all.where(user_id: current_user.id)
+    @cores = ['#a7d5fa', '#e2a7fa', '#faefa7', '#a7facc', '#b9a7fa', '#a7d5fa']
+    @lists = List.all.where(user_id: current_user.id).order(position: :asc)
     # @lists = List.where(user_id: current_user.id).take
   end
 
   # GET /lists/1 or /lists/1.json
   def show
     @id_lista = params[:id]
-    @items = Item.all.where(list_id: @id_lista)
+    @items = Item.all.where(list_id: @id_lista).order(position: :asc)
     @item = Item.new
     if @list.user_id != current_user.id
       redirect_to root_path , notice: "This list does not belong to you!"

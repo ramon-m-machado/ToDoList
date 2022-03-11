@@ -58,7 +58,7 @@
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff; }
+     }
   
   [tabindex="-1"]:focus {
     outline: 0 !important; }
@@ -8357,16 +8357,16 @@
 
 #formulario_signin
 {
-  border: 20px solid #81b29a;
-  border-top: 30px solid #81b29a;
+  border: 20px solid #b9a7fa;
+  border-top: 30px solid #b9a7fa;
   border-radius: 13px;
-  background-color: #81b29a;
+  background-color: #b9a7fa;
   opacity: 90%;
 }
 
 #login_frase
 {
-  color: #81b29a;
+  color: #9888cf;
   font-size: 38px;
   font-weight: bolder;
 }
@@ -8378,7 +8378,7 @@
 
 #bg_green
 {
-  background-color: #81b29a ;
+  background-color: #a7facc ;
 }
 
 #bg_gray
@@ -8387,13 +8387,69 @@
   color: #f7f7f7;
 }
 
-#botoes_iniciais, #botoes_iniciais2
+.botoes_iniciais
 {
-  font-family: "Raleway", sans-serif;
-  margin-top: 20px;
+  font-family: "Raleway", sans-serif !important;
+  margin-top: 20px !important;
+}
+
+.botoes_login
+{
+  margin: 5px !important;
 }
 
 #sombra_navbar
 {
-  box-shadow: 6px 6px #a8a8a8, -1em 0 0.5em white;
+  background-color: #b9a7fa !important;
+  box-shadow: 6px 6px #9790b0, -1em 0 0.5em white;
 }
+
+.mySidebar
+{
+  display: flex;
+}
+
+.background-white
+{
+  background-color: white !important;
+}
+
+.botao-nova-lista
+{
+  font-size: 20px;
+  background-color: #fac5a7 !important;
+  max-width:600px !important;
+  margin-top: 20px;
+}
+.meio
+{
+  width:200px;
+  height:100px;
+  padding-top: 30px;
+  font-size: 25px;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.div-lista
+{
+  height: 200px;
+  border-radius: 20px;
+  border-bottom: 1px solid gray;
+  border-right: 2px solid gray;
+  margin-top: 1px;
+}
+
+.titulo-lista
+{
+  margin-top: 20px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.texto-lista
+{
+  font-size: 18px;
+  text-align: center;
+}
+
