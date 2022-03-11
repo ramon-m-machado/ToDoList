@@ -1,26 +1,48 @@
-<h2>Log in</h2>
+<section class="ftco-section" id="imagem_bg">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section" id="login_frase">Login</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4" id="formulario_signin">
+					<div class="login-wrap p-0">
+		      	<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "signin-form", data: { turbo: false} } ) do |f| %>
+              <div class="form-group">
+                <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", placeholder:"Email" %>
+              </div>
+              <div class="form-group">
+                <%= f.password_field :password, autocomplete: "current-password", class:"form-control" , placeholder:"Senha" %>
+                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+              </div>
+              <div class="form-group">
+                <%= f.submit "Log in", class:"form-control btn btn-primary submit px-3" %>
+              </div>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { data: { turbo: false} } ) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+              <% if devise_mapping.rememberable? %>
+                <div class="field d-md-flex">
+                  <div class="w-50">
+                    <label class="checkbox-wrap checkbox-primary">Remember Me
+                    <%= f.check_box :remember_me %>
+                    <span class="checkmark"></span>
+                  </div>
+                </div>
+              <% end %>
+            <% end %>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+	          <div class="social d-flex text-center">
+              <%= render "devise/shared/links" %>
+	          </div>
+		      </div>
+				</div>
+			</div>
+	</section>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
-    </div>
-  <% end %>
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
-<% end %>
 
-<%= render "devise/shared/links" %>
+

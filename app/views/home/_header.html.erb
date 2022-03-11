@@ -1,8 +1,8 @@
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>ToDo<br>List</b></h3>
+<nav id="sombra_navbar" class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center" id="todo_frase"><b>ToDo<br>List</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <% if signed_in? %>
     <%= link_to "Listas", lists_path, class:"w3-bar-item w3-button", onclick:"w3_close()" %>
@@ -10,8 +10,8 @@
     <%= button_to "Sair", destroy_user_session_path, method: :delete, data: { turbo: "false" }, class:"w3-bar-item w3-button" , onclick:"w3_close()" %>
 
   <% else %>
-    <%= link_to "Entrar", new_user_session_path, class:"w3-bar-item w3-button", onclick:"w3_close()" %>
-    <%= link_to "Registrar", new_user_registration_path, class:"w3-bar-item w3-button", onclick:"w3_close()" %>
+    <%= link_to "Entrar", new_user_session_path, class:"w3-bar-item w3-button btn btn-primary", id:"botoes_iniciais", onclick:"w3_close()" %>
+    <%= link_to "Registrar", new_user_registration_path, class:"w3-bar-item w3-button btn btn-primary", id:"botoes_iniciais2", onclick:"w3_close()" %>
   <% end %>
 </nav>
 
