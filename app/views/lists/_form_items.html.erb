@@ -17,23 +17,11 @@
   </div>
 
   <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div>
-    <%= form.label :position, style: "display: block" %>
-    <%= form.number_field :position %>
-  </div>
-
-  <div>
-    <%= form.label :status, style: "display: block" %>
-    <%= form.check_box :status %>
-  </div>
-
-  <div>
-    <%= form.number_field :list_id, id: :lists_user_id, type: :hidden, value: @id_lista %>
-  </div>
+    <%= form.hidden_field :description %>
+    <%= form.hidden_field :position, type: :hidden  %>
+    <%= form.hidden_field :status, type: :hidden, value: false %>
+    <%= form.hidden_field :list_id, id: :lists_user_id, type: :hidden, value: @id_lista %>
+    <br>
   </div>
 
   <div>

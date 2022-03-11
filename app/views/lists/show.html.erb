@@ -33,8 +33,14 @@
 
 <% @items.each do |item| %>
 <tr>
-      <td><%= item.title %></td>
-      <td><%= check_box_tag(:status,:checked_value => true) %></td>
+      <td><%= item.title.to_s + '-----' + item.status.to_s %></td>
+      <td>
+      <%= link_to "Edit this item", edit_item_path(item) %>
+      <%#= form_for item do |f| %>
+        <%# f.check_box :status, :value => item.status, class:'btn btn-light', style:'bg-color: green;' %>
+        <%# f.submit "done" %>
+      <%# end %>
+      </td>
       <td><%= link_to "Mostrar", item, class:"btn btn-light" %></td>
   <%#= render item %>
 <% end %>
