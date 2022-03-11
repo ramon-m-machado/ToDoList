@@ -1,5 +1,22 @@
+
+
+
 <p style="color: green"><%= notice %></p>
 
+<!-- Photo grid -->
+  <div class="w3-row">
+    <!-- Colocar as listas -->
+
+    <% @lists.each do |list| %>
+        <div class="w3-third" style="border: 1px solid black">
+          <%= list.title %>
+          <%= link_to "Show this list", list %>
+        </div>
+    <% end %>
+
+    
+
+<!--
 <h1>Lists</h1>
 
 <div id="lists">
@@ -10,5 +27,8 @@
     </p>
   <% end %>
 </div>
+-->
+<br>
+<br>
 
 <%= link_to "New list", new_list_path %>
