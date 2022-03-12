@@ -11,28 +11,29 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
+  <%= form.label :title, style: "display: block", required: "required" %>
+  <div class="inputbox"> 
+    
     <%= form.text_field :title %>
   </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
+  <%= form.label :description, style: "display: block" %>
+  <div class="inputbox">
+    
     <%= form.text_field :description %>
   </div>
 
-  <div>
-    <%= form.label :position, style: "display: block" %>
+  <%= form.label :position, style: "display: block" %>
+  <div class="inputbox">
+    
     <%= form.number_field :position %>
   </div>
 
-  <div>
-  <br>
     <%#= form.label :user_id, style: "display: block"  %>
     <%= form.number_field :user_id, id: :lists_user_id, type: :hidden, value:current_user.id%>
+  
+  <div class="inputbox input-formulario">
+    <%= form.submit 'Enviar', :class => 'w3-bar-item w3-button btn btn-primary botoes_iniciais'%>
   </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
+</div>
 <% end %>

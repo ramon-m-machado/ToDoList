@@ -1,10 +1,10 @@
-<h1>Editing item</h1>
-
+<div class="center w3-content forms-modificados" style="max-width:450px;"  >
+  <h1>Editar Item</h1>
 <%= render "form_update", item: @item %>
 
-<br>
-
-<div>
-  <%= link_to "Show this item", @item %> |
-  <%= link_to "Back to items", items_path %>
 </div>
+<div class="w3-center w3-content" style="max-width:450px;">
+  <%= link_to "Show this item", @item, class:"w3-bar-item w3-button btn btn-primary botoes-baixo-form" %> 
+  <%= link_to "Back to List", lists_path + "/" + @item.list_id.to_s, class:"w3-bar-item w3-button btn btn-primary botoes-baixo-form" %>
+</div>
+

@@ -11,29 +11,34 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
+    <%= form.label :title, style: "display: block", required:"required" %>
+    <div class="inputbox">
     <%= form.text_field :title %>
   </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+<%= form.label :description, style: "display: block" %>
+  <div class="inputbox">
+    <%= form.text_field :description %>
   </div>
 
-  <div>
-    <%= form.label :position, style: "display: block" %>
+<%= form.label :position, style: "display: block" %>
+  <div class="inputbox">
     <%= form.number_field :position %>
   </div>
 
-  <div>
-    <%= form.label :status, style: "display: block" %>
-    <%= form.check_box :status %>
-  </div>
+<%= form.label :status, style: "display: block" %>
+  
+    <div class="form-check form-switch"> 
+        <%= form.check_box :status, class:"form-check-input", id:"flexSwitchCheckDefault" %>
+      <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+    </div>
+  
+
+  
 
   <%= form.number_field :list_id, id: :items_list_id, type: :hidden, value:item.list_id %>
 
-  <div>
-    <%= form.submit %>
+  <div class="inputbox input-formulario">
+    <%= form.submit 'Enviar', :class => 'w3-bar-item w3-button btn btn-primary botoes_iniciais' %>
   </div>
 <% end %>

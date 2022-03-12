@@ -11,12 +11,12 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
+    <%= form.label :title, 'Título', style: "display: block" %>
+    <div class="inputbox">
+      <%= form.text_field :title %>
+    </div>
 
-  <div>
+  <div style="display: none">
     <%= form.hidden_field :description %>
     <%= form.hidden_field :position, type: :hidden  %>
     <%= form.hidden_field :status, type: :hidden, value: false %>
@@ -24,7 +24,11 @@
     <br>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="inputbox input-formulario">
+    <%= form.submit 'Enviar', :class => 'w3-bar-item w3-button btn btn-primary botoes_iniciais' %>
   </div>
+  </div>
+  <br>
+<br>
+<br>
 <% end %>
