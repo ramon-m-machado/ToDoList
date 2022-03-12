@@ -1,21 +1,43 @@
-
-
-
-<p style="color: green"><%= notice %></p>
-
 <!-- Photo grid -->
+<div class="w3-content w3-justify botao-nova-lista">
+  <%= link_to "Nova Lista", new_list_path, class:"w3-button w3-block w3-margin-bottom" %>  
+</div>
+
+<div class="w3-content w3-justify meio">
+  <p class="w3-center">Suas Listas:</p>
+</div>
+
   <div class="w3-row">
     <!-- Colocar as listas -->
+    <% i=0 %>
+      <% @lists.each do |list| %>
+        <% if i % 3==0 %>
+          </div>
+          <div class="w3-row">
+        <% end %>
 
-    <% @lists.each do |list| %>
-        <div class="w3-third" style="border: 1px solid black">
-          <%= list.title %>
-          <%= link_to "Show this list", list %>
-        </div>
-    <% end %>
+        <% 
+        cor_aleatoria = @cores.sample
+        %>
 
-    
+          <div class="w3-third div-lista" style="background-color:<%= cor_aleatoria %>">
+            <p class="w3-content w3-center titulo-lista">
+              <%= list.title %>
+            </p>
+            <p class="w3-content w3-center texto-lista">
+              <%= list.description %>
+            </p>
+            <p class="w3-content w3-center texto-lista">
+               <%= link_to "Mostrar esta lista", list, class:"w3-bar-item w3-button btn btn-primary " %>
+            </p>
+            
+          </div>
 
+          <% i +=1 %>
+      <% end %>
+
+    </div>
+       
 <!--
 <h1>Lists</h1>
 
@@ -31,4 +53,4 @@
 <br>
 <br>
 
-<%= link_to "New list", new_list_path %>
+

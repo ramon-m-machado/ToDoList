@@ -1,10 +1,10 @@
 <style>
 /* The alert message box */
 .alert {
-  padding: 20px;
+  /** padding: 20px; **/
   background-color: #f44336; /* Red */
   color: white;
-  margin-bottom: 15px;
+  /** margin: 15px; **/
 }
 
 /* The close button */
@@ -28,5 +28,5 @@
 <div class="alert">
   <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
   <%= notice %>
-  <% alert %>
+  <%= alert %>
 </div>
