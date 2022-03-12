@@ -1,10 +1,9 @@
-<h1>Editing list</h1>
+<div class="center w3-content forms-modificados" style="max-width:450px;"  >
+  <h1>Editar Lista</h1>
 
 <%= render "form", list: @list %>
 
-<br>
-
-<div>
-  <%= link_to "Show this list", @list %> |
-  <%= link_to "Back to lists", lists_path %>
+<div class="w3-center w3-content" style="max-width:450px;">
+  <%= link_to "Mostrar esta lista", @list, class:"w3-bar-item w3-button btn btn-primary botoes-baixo-form" %>
+  <%= link_to "Voltar para listas", lists_path, class:"w3-bar-item w3-button btn btn-primary botoes-baixo-form" %>
 </div>

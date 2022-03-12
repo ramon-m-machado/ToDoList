@@ -11,6 +11,7 @@ class ListsController < ApplicationController
 
   # GET /lists/1 or /lists/1.json
   def show
+    @cores = ['#fbf8cc', '#fde4cf', '#ffcfd2', '#f1c0e8', '#cfbaf0', '#a3c4f3', '#90dbf4', '#8eecf5', '#b9fbc0']
     @id_lista = params[:id]
     @items = Item.all.where(list_id: @id_lista).order(position: :asc)
     @item = Item.new

@@ -447,26 +447,26 @@
     max-height: 340px;
     overflow-y: scroll; }
   
-  .container {
+  .inputbox {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto; }
     @media (min-width: 576px) {
-      .container {
+      .inputbox {
         max-width: 540px; } }
     @media (min-width: 768px) {
-      .container {
+      .inputbox {
         max-width: 720px; } }
     @media (min-width: 992px) {
-      .container {
+      .inputbox {
         max-width: 960px; } }
     @media (min-width: 1200px) {
-      .container {
+      .inputbox {
         max-width: 1140px; } }
   
-  .container-fluid {
+  .inputbox-fluid {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -8349,6 +8349,80 @@
           background: #fac5a7;
           color: #fff; }
   
+/***
+
+    PARTE FORMULARIO
+
+***/
+
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+.center {
+  margin-top: 40px;
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+.center h1 {
+  font-size: 2em;
+  border-left: 5px solid #b9a7fa;
+  padding: 10px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  width: 360px;
+  height: 30px;
+  margin-bottom: 40px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center .inputbox [type="button"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+}
+.center .inputbox:hover [type="button"] {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}
+
+/***
+
+          PARTE QUE EU EDITEI
+
+***/
+
 #imagem_bg {
   background-image: url("/assets/bg.png");
   background-position: center ;
@@ -8451,5 +8525,45 @@
 {
   font-size: 18px;
   text-align: center;
+}
+
+.forms-modificados
+{
+  border-bottom: 3px solid gray;
+  border-right: 3px solid gray;
+  border-top: 1px solid gray;
+  border-left: 1px solid grey;
+}
+
+.input-formulario
+{
+  margin-top:60px;
+  margin-bottom: 20px !important;
+}
+
+.botoes-baixo-form
+{
+  font-family: "Raleway", sans-serif !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;  
+}
+
+.form-check-label, .form-check-input
+{
+  margin-left: 1px !important;
+  margin-top: 5px !important;
+  transform : scale(1.5);
+}
+
+.btn-lado
+{
+  float: left;
+  margin: 10px;
+}
+
+.btn-mostrar
+{
+  width:230px;
+  height:80px;
 }
 
