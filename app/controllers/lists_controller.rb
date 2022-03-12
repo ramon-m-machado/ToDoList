@@ -4,7 +4,7 @@ class ListsController < ApplicationController
 
   # GET /lists or /lists.json
   def index
-    @cores = ['#a7d5fa', '#e2a7fa', '#faefa7', '#a7facc', '#b9a7fa', '#a7d5fa']
+    @cores = ['#fbf8cc', '#fde4cf', '#ffcfd2', '#f1c0e8', '#cfbaf0', '#a3c4f3', '#90dbf4', '#8eecf5', '#b9fbc0']
     @lists = List.all.where(user_id: current_user.id).order(position: :asc)
     # @lists = List.where(user_id: current_user.id).take
   end
