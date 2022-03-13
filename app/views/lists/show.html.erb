@@ -21,7 +21,6 @@
     <tr>
       <th scope="col">Titulo</th>
       <th scope="col">Status</th>
-      <th scope="col">Detalhes</th>
       <th scope="col">Editar</th>
     </tr>
   </thead>
@@ -41,7 +40,7 @@
         <% end %>
       </td>
 
-      <td><%= link_to "Mostrar", item, class:"btn btn-light" %></td>
+      <%#= link_to "Mostrar", item, class:"btn btn-light" %>
 
       <td>
       <%= link_to "Editar", edit_item_path(item), class:"btn btn-light" %>
