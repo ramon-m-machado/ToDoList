@@ -1,14 +1,6 @@
-<p style="color: green"><%= notice %></p>
+<h1 class="titulo-lista w3-center">Vá para a pagina das listas e veja seus itens</h1>
 
-<h1>Items</h1>
-
-<div id="items">
-  <% @items.each do |item| %>
-    <%= render item %>
-    <p>
-      <%= link_to "Show this item", item %>
-    </p>
-  <% end %>
+<div class="w3-center w3-content" style="max-width:450px;">
+  <%= link_to "Ir para Listas", lists_path, class:"w3-bar-item w3-button btn btn-primary botoes-baixo-form" %>
 </div>
 
-<%= link_to "New item", new_item_path %>
