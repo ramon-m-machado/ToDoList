@@ -23,8 +23,8 @@
               <% if devise_mapping.rememberable? %>
                 <div class="field d-md-flex">
                   <div class="w-50">
-                    <label class="checkbox-wrap checkbox-primary">Remember Me
-                    <%= f.check_box :remember_me %>
+                    <label class="checkbox-wrap checkbox-primary" style="color:black">Lembre-se de mim
+                    <%= f.check_box :remember_me, checked: true%>
                     <span class="checkmark"></span>
                   </div>
                 </div>

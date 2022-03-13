@@ -4,7 +4,8 @@
 
 </div>
 <div class="w3-center w3-content" style="max-width:450px;">
-  <%= link_to "Mostrar esse item", @item, class:"w3-bar-item w3-button btn btn-primary botoes-baixo-form" %> 
+
+  <%= button_to "Excluir esse item", @item, method: :delete, class:"w3-bar-item w3-button btn btn-primary botoes-baixo-form" %> 
   <%= link_to "Voltar para a lista", lists_path + "/" + @item.list_id.to_s, class:"w3-bar-item w3-button btn btn-primary botoes-baixo-form" %>
 </div>
 
