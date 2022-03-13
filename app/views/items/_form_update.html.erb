@@ -11,30 +11,27 @@
     </div>
   <% end %>
 
-    <%= form.label :title, style: "display: block", required:"required" %>
+    <%= form.label :title, 'Título', style: "display: block", required:"required" %>
     <div class="inputbox">
     <%= form.text_field :title %>
   </div>
 
-<%= form.label :description, style: "display: block" %>
+<%= form.label :description, 'Descrição', style: "display: block" %>
   <div class="inputbox">
     <%= form.text_field :description %>
   </div>
 
-<%= form.label :position, style: "display: block" %>
+<%= form.label :position, 'Posição em que aparecerá na tela', style: "display: block" %>
   <div class="inputbox">
     <%= form.number_field :position %>
   </div>
 
-<%= form.label :status, style: "display: block" %>
+<%= form.label :status, 'Finalizado?', style: "display: block" %>
   
     <div class="form-check form-switch"> 
         <%= form.check_box :status, class:"form-check-input", id:"flexSwitchCheckDefault" %>
       <label class="form-check-label" for="flexSwitchCheckDefault"></label>
     </div>
-  
-
-  
 
   <%= form.number_field :list_id, id: :items_list_id, type: :hidden, value:item.list_id %>
 

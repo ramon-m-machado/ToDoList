@@ -11,19 +11,19 @@
     </div>
   <% end %>
 
-  <%= form.label :title, style: "display: block", required: "required" %>
+  <%= form.label :title, 'Título', style: "display: block", required: "required" %>
   <div class="inputbox"> 
     
     <%= form.text_field :title %>
   </div>
 
-  <%= form.label :description, style: "display: block" %>
+  <%= form.label :description, 'Descrição', style: "display: block" %>
   <div class="inputbox">
     
     <%= form.text_field :description %>
   </div>
 
-  <%= form.label :position, style: "display: block" %>
+  <%= form.label :position, 'Posição em que aparecerá na tela', style: "display: block" %>
   <div class="inputbox">
     
     <%= form.number_field :position %>
