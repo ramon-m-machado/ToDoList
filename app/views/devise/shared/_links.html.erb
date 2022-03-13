@@ -1,5 +1,5 @@
 <%- if controller_name != 'sessions' %>
-  <%= link_to "Log in", new_session_path(resource_name), class:"w3-bar-item botoes_login btn btn-primary" %><br />
+  <%= link_to "Log in", new_session_path(resource_name), class:"w3-bar-item botoes_login btn btn-primary botoes-baixo-form" %><br />
 <% end %>
 
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>

@@ -1,29 +1,33 @@
-<h2>Sign up</h2>
+<div class="center w3-content forms-modificados" style="max-width:450px;"  >
+  <h1>Registre-se</h1>
+
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { data: { turbo: false} } ) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
     <%= f.label :email %><br />
+    <div class="inputbox">
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
     <%= f.label :password %>
+    <div class="inputbox">
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
-  <div class="field">
     <%= f.label :password_confirmation %><br />
+    <div class="inputbox">
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+<div class="inputbox">
+    <%= f.submit "Enviar", :class => 'w3-bar-item w3-button btn btn-primary botoes_iniciais'%> 
   </div>
 <% end %>
-
+</div>
+<div class="w3-center w3-content" style="max-width:450px;">
 <%= render "devise/shared/links" %>
+</div>
