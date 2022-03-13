@@ -8,7 +8,7 @@
 
 <div class="w3-center w3-content btn-mostrar">
   <%= link_to "Editar", edit_list_path(@list), class:"w3-bar-item w3-button btn btn-primary btn-lado" %>
-  <%= button_to "Excluir", @list, class:"w3-bar-item w3-button btn btn-primary btn-lado" %>
+  <%= button_to "Excluir", @list, method: :delete, class:"w3-bar-item w3-button btn btn-primary btn-lado" %>
 </div>
 
 <div class="w3-content w3-justify meio">
