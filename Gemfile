@@ -6,6 +6,10 @@ ruby "3.0.0"
 # Eu adicionei
 gem "pg"
 
+group :development, :test do
+  gem 'rspec-rails', '~> 4.0.0'
+end
+
 gem 'devise', github: 'heartcombo/devise', branch: 'main'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"

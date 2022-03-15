@@ -13,27 +13,27 @@
 
     <%= form.label :title, style: "display: block", required:"required" %>
     <div class="inputbox">
-    <%= form.text_field :title %>
-  </div>
+      <%= form.text_field :title %>
+    </div>
 
-<%= form.label :description, style: "display: block" %>
-  <div class="inputbox">
-    <%= form.text_area :description %>
-  </div>
+    <%= form.label :description, style: "display: block" %>
+    <div class="inputbox">
+      <%= form.text_area :description %>
+    </div>
 
-<%= form.label :position, style: "display: block" %>
-  <div class="inputbox">
-    <%= form.number_field :position %>
-  </div>
+    <%= form.label :position, style: "display: block" %>
+    <div class="inputbox">
+      <%= form.number_field :position %>
+    </div>
 
-<%= form.label :status, style: "display: block" %>
-  <div class="inputbox">
-    <%= form.check_box :status %>
-  </div>
+    <%= form.label :status, style: "display: block" %>
+    <div class="inputbox">
+      <%= form.check_box :status %>
+    </div>
 
-  <%= form.number_field :list_id, id: :items_list_id, type: :hidden, value: params[:id]  %>
+    <%= form.number_field :list_id, id: :items_list_id, type: :hidden, value: params[:id]  %>
 
-  <div class="inputbox input-formulario">
-    <%= form.submit 'Enviar', :class => 'w3-bar-item w3-button btn btn-primary botoes_iniciais' %>
-  </div>
+    <div class="inputbox input-formulario">
+      <%= form.submit 'Enviar', :class => 'w3-bar-item w3-button btn btn-primary botoes_iniciais' %>
+    </div>
 <% end %>
