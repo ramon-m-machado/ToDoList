@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-    <%= form.label :title, 'Título', style: "display: block", required:"required" %>
+  <%= form.label :title, 'Título', style: "display: block", required:"required" %>
     <div class="inputbox">
     <%= form.text_field :title %>
   </div>
@@ -27,9 +27,8 @@
   </div>
 
 <%= form.label :status, 'Finalizado?', style: "display: block" %>
-  
     <div class="form-check form-switch"> 
-        <%= form.check_box :status, class:"form-check-input", id:"flexSwitchCheckDefault" %>
+      <%= form.check_box :status, class:"form-check-input", id:"flexSwitchCheckDefault" %>
       <label class="form-check-label" for="flexSwitchCheckDefault"></label>
     </div>
 
